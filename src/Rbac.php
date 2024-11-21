@@ -52,7 +52,7 @@ class Rbac
             );
         }
 
-        if ($parents) {
+        if ($parents !== null) {
             $parents = is_array($parents) ? $parents : [$parents];
             /** @var RoleInterface|string $parent */
             foreach ($parents as $parent) {
